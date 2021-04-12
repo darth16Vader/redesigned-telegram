@@ -1,0 +1,114 @@
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 50px;
+  background-color: $gray-200;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .side-menu-list {
+    padding: 0 1em;
+    display: block;
+    position: absolute;
+    width: 250px;
+    right: 0;
+
+    &ul,
+    li {
+      padding: 0.5em;
+      cursor: pointer;
+
+      &.underline {
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: $blue-400;
+          visibility: hidden;
+          transition: all 0.3s ease-in-out;
+        }
+        &:hover:before {
+          visibility: visible;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .menuclose {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    font-size: 1em;
+    animation-name: reverse;
+    animation-duration: 0.7s;
+
+    &:hover {
+      animation-name: myanimation;
+      animation-duration: 0.7s;
+      cursor: pointer;
+
+      @keyframes myanimation {
+        from {
+          -webkit-transition: 0.7s;
+          -moz-transition: 0.7s;
+          -ms-transition: 0.7s;
+          -o-transition: 0.7s;
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+        }
+        to {
+          -webkit-transition: 0.7s;
+          -moz-transition: 0.7s;
+          -ms-transition: 0.7s;
+          -o-transition: 0.7s;
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+      }
+
+      @keyframes reverse {
+        from {
+          -webkit-transition: 0.7s;
+          -moz-transition: 0.7s;
+          -ms-transition: 0.7s;
+          -o-transition: 0.7s;
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -webkit-transition: 0.7s;
+          -moz-transition: 0.7s;
+          -ms-transition: 0.7s;
+          -o-transition: 0.7s;
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+}

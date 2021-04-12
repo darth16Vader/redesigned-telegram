@@ -1,0 +1,227 @@
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 50px;
+  background-color: #eeeeee;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sidenav .side-menu-list {
+  padding: 0 1em;
+  display: block;
+  position: absolute;
+  width: 250px;
+  right: 0;
+}
+
+.sidenav .side-menu-listul,
+.sidenav .side-menu-list li {
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.sidenav .side-menu-listul.underline,
+.sidenav .side-menu-list li.underline {
+  position: relative;
+}
+
+.sidenav .side-menu-listul.underline:before,
+.sidenav .side-menu-list li.underline:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #42a5f5;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidenav .side-menu-listul.underline:hover:before,
+.sidenav .side-menu-list li.underline:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.sidenav .menuclose {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  font-size: 1em;
+  -webkit-animation-name: reverse;
+          animation-name: reverse;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+}
+
+.sidenav .menuclose:hover {
+  -webkit-animation-name: myanimation;
+          animation-name: myanimation;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  cursor: pointer;
+}
+
+@-webkit-keyframes myanimation {
+  from {
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  to {
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes myanimation {
+  from {
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  to {
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes reverse {
+  from {
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes reverse {
+  from {
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+@font-face {
+  font-family: 'Fjalla One';
+  src: url("../font/FjallaOne-Regular.ttf");
+}
+
+::-webkit-scrollbar {
+  background-color: #fff;
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 4px solid #fff;
+}
+
+body {
+  font-size: 0.7em;
+  background-color: #f5f5f5;
+}
+
+.navbar .navbar-font {
+  font-family: 'Fjalla One', sans-serif;
+  color: #fff;
+  font-size: medium;
+}
+
+.main-body {
+  height: 85vh;
+}
+
+.each-card-body {
+  height: 20vh;
+}
+
+.table-layout {
+  table-layout: fixed;
+}
+
+.table-height {
+  height: 14vh;
+  margin-bottom: 0.5em;
+}
+
+.table {
+  font-size: 0.6rem;
+}
+
+.table th {
+  font-weight: bold;
+}
+
+.table-sm > :not(caption) > * > * {
+  padding: 0.1rem 0.6rem;
+}
+
+.pagination-sm .page-link {
+  font-size: 0.75rem;
+  background-color: #b2ebf2;
+  margin: 0 0.2em;
+}
+
+.pagination-sm .page-link:hover {
+  background-color: #80deea;
+}
+
+.pagination-sm .page-link:focus {
+  color: #fff;
+  background-color: #00acc1;
+}
+/*# sourceMappingURL=index.css.map */
