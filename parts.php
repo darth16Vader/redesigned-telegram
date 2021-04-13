@@ -36,7 +36,7 @@
           <div class="card p-1 m-1 border-bottom border-success font-weight-bold">
             <div class="d-flex">
               <div class="flex-grow-1 align-self-center">
-                <div class="font-weight-bold text-primary">parts</div>
+                <div class="font-weight-bold text-primary"><i class="fas fa-chevron-right"></i> parts</div>
               </div>
               <div>
                 <nav aria-label="">
