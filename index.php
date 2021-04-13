@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design for Bootstrap</title>
+    <title>Paper Frame | I-TEC</title>
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
 
@@ -13,37 +13,13 @@
 
     <!-- Font awesome -->
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+    
   </head>
   <body class="text-capitalize">
     <!-- Start your project here-->
 
     <!-- As a heading -->
-    <nav class="navbar bg-primary mb-2">
-      <div class="container-fluid">
-        <span class="d-flex align-items-center mb-0 navbar-font">
-          <button class='btn btn-sm text-primary btn-light btn-rounded btn-floating me-2' onclick="openNav()"><i class="fas fa-bars"></i></button>
-            paper Frame Production Monitoring System</span>
-        <?php 
-        echo "<body onload='startTime()'>
-          <div id='txt' class='time text-light'>
-          </div>
-        </body>"
-        ?>
-      </div>
-      <div id="mySidenav" class="sidenav">
-        <div class="side-menu-list">
-        <div class="menuclose" onclick="closeNav()"><i class="fas fa-times"></i></div>
-          <h5>main menu</h5>
-          <ul class="list-unstyled">
-            <li class="underline"><i class="fas fa-file-alt"></i> master file</li>
-            <li class="underline"><i class="fas fa-industry"></i> production</li>
-            <li class="underline"><i class="fas fa-cube"></i> material</li>
-            <li class="underline"><i class="fas fa-layer-group"></i> stocks</li>
-            <li class="underline"><i class="fas fa-dolly"></i> deliveries</li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <?php include "./nav.php" ?>
 
     <div class="container-fluid main-body" onclick="closeNav()">
       <div class="row g-2">
@@ -56,7 +32,7 @@
                 <div class="font-weight-bold text-primary">cutting production</div>
               </div>
               <div>
-                <nav aria-label="Page navigation example">
+                <nav aria-label="">
                   <ul class="pagination pagination-sm mb-0">
                     <li class="page-item"><a class="page-link" href="#">new PO</a></li>
                     <li class="page-item"><a class="page-link" href="#">get stock</a></li>
@@ -90,7 +66,7 @@
                 </div>
 
                 <div class="overflow-auto table-height">
-                <table class="table table-layout table-sm table-hover table-striped mb-2">
+                <table class="table table-layout table-sm table-hover mb-2">
                   <tbody>
                     <tr>
                       <td>NaN</td>
@@ -168,7 +144,7 @@
         <!-- stock inventory -->
         <div class="col-md-6">
           <div class="card p-1 m-1 border-bottom border-dark">
-            <div class="text-center font-weight-bold text-primary">Laminating production</div>
+            <div class="font-weight-bold text-primary">Laminating production</div>
           </div>
 
           <div class="card p-1 m-1">
@@ -193,7 +169,7 @@
                 </div>
 
                 <div class="overflow-auto table-height">
-                <table class="table table-layout table-sm table-hover table-striped mb-2">
+                <table class="table table-layout table-sm table-hover mb-2">
                   <tbody>
                     <tr>
                       <td>NaN</td>
@@ -281,7 +257,7 @@
                 <div class="font-weight-bold text-primary">for delivery</div>
               </div>
               <div>
-                <nav aria-label="Page navigation example">
+                <nav aria-label="">
                   <ul class="pagination pagination-sm mb-0">
                     <li class="page-item"><a class="page-link" href="#">process</a></li>
                     <li class="page-item"><a class="page-link" href="#">print sticker</a></li>
@@ -313,7 +289,7 @@
                 </div>
 
                 <div class="overflow-auto table-height">
-                <table class="table table-layout table-sm table-hover table-striped mb-2">
+                <table class="table table-layout table-sm table-hover mb-2">
                   <tbody>
                     <tr>
                       <td>NaN</td>
@@ -395,7 +371,7 @@
                 <div class="font-weight-bold text-primary">material inventory</div>
               </div>
               <div>
-                <nav aria-label="Page navigation example">
+                <nav aria-label="">
                   <ul class="pagination pagination-sm mb-0">
                     <li class="page-item"><a class="page-link" href="#">withdraw</a></li>
                     <li class="page-item"><a class="page-link" href="#">receiving</a></li>
@@ -426,7 +402,7 @@
                 </div>
 
                 <div class="overflow-auto table-height">
-                <table class="table table-layout table-sm table-hover table-striped mb-2">
+                <table class="table table-layout table-sm table-hover mb-2">
                   <tbody>
                     <tr>
                       <td>NaN</td>
@@ -509,7 +485,7 @@
                 <div class="font-weight-bold text-primary">on-going production</div>
               </div>
               <div>
-                <nav aria-label="Page navigation example">
+                <nav aria-label="">
                   <ul class="pagination pagination-sm mb-0">
                     <li class="page-item"><a class="page-link" href="#">update qty</a></li>
                     <li class="page-item"><a class="page-link" href="#">print label</a></li>
@@ -534,7 +510,7 @@
                 <div class="font-weight-bold text-primary">machine parts usage</div>
               </div>
               <div>
-                <nav aria-label="Page navigation example">
+                <nav aria-label="">
                   <ul class="pagination pagination-sm mb-0">
                     <li class="page-item"><a class="page-link" href="#">action</a></li>
                     <li class="page-item"><a class="page-link" href="#">day output</a></li>
