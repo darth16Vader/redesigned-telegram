@@ -19,7 +19,7 @@
       </body>"
       ?>
     </div>
-    <div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav shadow-5-strong">
       <div class="side-menu-list">
       <div class="menuclose" onclick="closeNav()"><i class="fas fa-times"></i></div>
         <h5>main menu</h5>

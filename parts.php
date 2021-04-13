@@ -41,7 +41,12 @@
               <div>
                 <nav aria-label="">
                   <ul class="pagination pagination-sm mb-0">
-                    <li class="page-item"><a class="page-link" href="#"> <i class="fas fa-plus"></i> add parts</a></li>
+                    <li 
+                    class="page-item" 
+                    data-mdb-toggle="modal"
+                    data-mdb-target="#staticBackdrop">
+                    <a class="page-link" href="#"><i class="fas fa-plus"></i> add parts</a>
+                    </li>
                   </ul>
                 </nav>
               </div>
@@ -149,6 +154,71 @@
       </div>
     </div>
     
+    <!-- MODAL -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-mdb-backdrop="static"
+        data-mdb-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header px-2">
+              <span class="modal-title" id="staticBackdropLabel">add parts</span>
+              <button
+                type="button"
+                class="btn-close btn-sm"
+                data-mdb-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+            <!-- <div class="form-outline">
+              <i class="fas fa-exclamation-circle trailing"></i>
+              <input type="text" id="form1" class="form-control form-icon-trailing" />
+              <label class="form-label" for="form1">Example label</label>
+            </div>
+            <select class="form-select form-select-sm" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select> -->
+            <div class="row">
+
+              <div class="col-3 align-self-center">input here</div>
+              <div class="col-9">
+                <div class="form-outline">
+                <i class="fas fa-exclamation-circle trailing"></i>
+                <input type="text" id="form1" class="form-control form-icon-trailing" />
+                <label class="form-label" for="form1">Example label</label>
+                </div>
+              </div>
+
+              <div class="col-3 align-self-center">select here</div>
+              <div class="col-9">
+                <select class="form-select form-select-sm" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                </select>
+              </div>
+
+            </div>
+            </div>
+            <div class="modal-footer px-2">
+              <button type="button" class="btn btn-secondary btn-sm" data-mdb-dismiss="modal">
+                Close
+              </button>
+              <button type="button" class="btn btn-primary btn-sm">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <!-- End your project here-->
 
     <!-- MDB -->
